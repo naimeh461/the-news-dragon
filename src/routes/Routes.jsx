@@ -40,7 +40,7 @@ import Terms from "../Pages/Shared/Terms";
       {
         path: ":id",
         element :<Category></Category>,
-        loader: ({params}) => fetch(`http://localhost:5000/categories/${params.id}`)
+        loader: ({params}) => fetch(`https://the-news-dragon-server-naimeh461.vercel.app/categories/${params.id}`)
       }  
 
       ]
@@ -52,7 +52,7 @@ import Terms from "../Pages/Shared/Terms";
         {
           path: ":id",
           element : <PrivateRoute><News></News></PrivateRoute>,
-          loader: ({params}) => fetch(`http://localhost:5000/news/${params.id}`)
+          loader: ({params}) => fetch(`https://the-news-dragon-server-naimeh461.vercel.app/news/${params.id}`)
         }
       ]
     }
